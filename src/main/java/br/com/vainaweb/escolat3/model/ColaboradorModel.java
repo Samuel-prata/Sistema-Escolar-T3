@@ -21,6 +21,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ColaboradorModel {
 	
+
 	@Id
 	private Long id;
 	
@@ -32,6 +33,15 @@ public class ColaboradorModel {
 	@Embedded //Diz que o atributo será incorporado NESSA tabela
 	private Endereco endereco;
 	
+// |------------------------------------------CONSTRUTOR-----------------------------------------|
+	
+	public ColaboradorModel(String nome, String cpf, String email, Cargo cargo) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.email = email;
+		this.cargo = cargo;
+	}
+
 }
 
 
