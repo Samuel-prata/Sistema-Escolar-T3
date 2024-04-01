@@ -1,4 +1,6 @@
 package br.com.vainaweb.escolat3.dto;
 
-public record DadosColaborador(Long id, String nome, String cpf, String endereco) {
+import br.com.vainaweb.escolat3.enums.Cargo;
+
+public record DadosColaborador(String nome, String cpf, String email, Cargo cargo) {
 }
