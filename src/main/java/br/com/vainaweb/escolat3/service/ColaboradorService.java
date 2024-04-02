@@ -22,9 +22,14 @@ public class ColaboradorService {
 		return repository.findAll(); // SELECT * FROM tb_colaboradores;
 	}
 
-	public void cadastrar(DadosColaborador dados) {
-		var colaborador = new ColaboradorModel(dados.nome(), dados.cpf(), dados.email(), dados.cargo());
-		repository.save(colaborador); //INSERT 
+	public String cadastrar(DadosColaborador dados) {
+		
+
+			repository.save(new ColaboradorModel(dados.nome(), dados.cpf(), dados.email(), dados.cargo())); //INSERT 
+			return "Cadastro efetuado com sucesso";
+
+	
+		
 	}
 	
 }
