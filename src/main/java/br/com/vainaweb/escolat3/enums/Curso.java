@@ -1,0 +1,16 @@
+package br.com.vainaweb.escolat3.enums;
+
+public enum Curso {
+	INGLES,
+	ROBOTICA,
+	MODELAGEM_DE_DADOS,
+	CLOUD,
+	JAVA,
+	SPRING,
+	REACT,
+	JAVASCRIPT,
+	INTELIGENCIA_ARTIFICIAL,
+	PYTHON,
+	TYPESCRIPT,
+	MACHINE_LEARNING
+}

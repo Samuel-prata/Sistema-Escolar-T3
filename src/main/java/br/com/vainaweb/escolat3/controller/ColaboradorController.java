@@ -22,7 +22,7 @@ import br.com.vainaweb.escolat3.service.ColaboradorService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/colaborador-teste")
+@RequestMapping("/colaborador")
 public class ColaboradorController {
 
 	@Autowired
